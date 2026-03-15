@@ -1,62 +1,187 @@
-🏥 AI-SEVA: Intelligent Healthcare Platform
-A full-stack AI-driven healthcare platform enabling users to submit multilingual symptom descriptions and receive real-time disease predictions, nearest doctor recommendations, and health news.
+# 🏥 AI-SEVA: Intelligent Healthcare Platform
 
-🚀 Features
-🩺 AI Symptom Checker: Uses Natural Language Processing (Scikit-learn, Multinomial Naive Bayes) to classify user symptoms and predict potential diseases or medical emergencies.
-🗺️ Find Nearest Doctors: Integrates Leaflet.js interactive maps to locate and display nearby medical professionals and facilities based on user location and condition.
-🌐 Multilingual Health News: Fetches and displays the latest healthcare news in multiple languages (English/Hindi).
-⚡ Modern Tech Stack:
-Frontend: Next.js 15, React 19, TypeScript, Tailwind CSS, Shadcn UI
-Backend: Flask, Python
-Machine Learning: Scikit-learn (CountVectorizer, Naive Bayes)
-🛠️ Installation & Setup
-Prerequisites
-Make sure you have Node.js and Python installed on your machine.
+A **full-stack AI-driven healthcare platform** that allows users to enter symptoms in natural language and receive **real-time disease predictions, nearby doctor suggestions, and multilingual health news**.
 
-Frontend Setup (Next.js)
+The platform is designed to **assist rural communities in finding relevant healthcare information quickly**.
+
+---
+
+# 🚀 Features
+
+### 🩺 AI Symptom Checker
+
+* Uses **Natural Language Processing (NLP)** to analyze user-entered symptoms.
+* Built with **Scikit-learn, CountVectorizer, and Multinomial Naive Bayes**.
+* Predicts potential diseases and identifies possible medical emergencies.
+
+### 🗺️ Find Nearest Doctors
+
+* Interactive maps built using **Leaflet.js**.
+* Displays nearby **doctors and healthcare facilities** based on the user's location and condition.
+
+### 🌐 Multilingual Health News
+
+* Displays **latest healthcare news**.
+* Supports **multiple languages (English & Hindi)** for wider accessibility.
+
+### ⚡ Modern Tech Stack
+
+**Frontend**
+
+* Next.js 15
+* React 19
+* TypeScript
+* Tailwind CSS
+* Shadcn UI
+
+**Backend**
+
+* Flask
+* Python
+
+**Machine Learning**
+
+* Scikit-learn
+* CountVectorizer
+* Multinomial Naive Bayes
+
+---
+
+# 🛠 Installation & Setup
+
+## Prerequisites
+
+Make sure you have installed:
+
+* **Node.js**
+* **Python 3**
+
+---
+
+# Frontend Setup (Next.js)
+
 Clone the repository:
 
-bash
+```bash
 git clone https://github.com/yourusername/ai-seva.git
 cd ai-seva/GramAarogya-master
-Install NPM dependencies:
+```
 
-bash
+Install dependencies:
+
+```bash
 npm install
+```
+
 Run the development server:
 
-bash
+```bash
 npm run dev
-The frontend will be available at http://localhost:3000
+```
 
-Backend Setup (Flask API)
+The frontend will run at:
+
+```
+http://localhost:3000
+```
+
+---
+
+# Backend Setup (Flask API)
+
 Open a new terminal and navigate to the project directory:
 
-bash
+```bash
 cd ai-seva/GramAarogya-master
-(Optional but recommended) Create and activate a Python virtual environment:
+```
 
-bash
+Create and activate a virtual environment (recommended):
+
+```bash
 python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+
+Activate the environment
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Mac/Linux:
+
+```bash
+source venv/bin/activate
+```
+
 Install Python dependencies:
 
-bash
+```bash
 pip install -r requirements.txt
-Run the Flask server:
+```
 
-bash
+Run the backend server:
+
+```bash
 python backend.py
-The backend API will run at http://localhost:5000
+```
 
-🧠 Machine Learning Pipeline
-The project uses a custom NLP pipeline to classify symptoms:
+The backend API will run at:
 
-simulate_ml.py
-: Contains the training logic using CountVectorizer and MultinomialNB.
-train_model.py
-: Trains the model on symptom datasets and exports the trained 
+```
+http://localhost:5000
+```
+
+---
+
+# 🧠 Machine Learning Pipeline
+
+The system uses a **custom NLP pipeline** to classify symptoms and predict diseases.
+
+### `simulate_ml.py`
+
+Contains the training logic using:
+
+* **CountVectorizer**
+* **Multinomial Naive Bayes**
+
+### `train_model.py`
+
+* Trains the ML model on symptom datasets
+* Exports the trained model as:
+
+```
 model.pkl
- file.
-run_metrics.py
-: Evaluates the model accuracy, F1-scores, and generates a confusion matrix.
+```
+
+### `run_metrics.py`
+
+Evaluates model performance by generating:
+
+* Accuracy score
+* F1 score
+* Confusion matrix
+
+---
+
+# 📌 Future Improvements
+
+* Real-time doctor appointment booking
+* Integration with **live Google Maps API**
+* Support for **more regional languages**
+* More advanced **AI diagnosis models**
+
+---
+
+# 🤝 Contribution
+
+Contributions are welcome!
+Feel free to fork the repository and submit pull requests.
+
+---
+
+# 📜 License
+
+This project is developed for **educational and research purposes**.
+
